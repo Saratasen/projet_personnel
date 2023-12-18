@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Facture</title>
+</head>
+
+<body>
+
+    <h1>Facture</h1>
+
+    <section>
+        <h2>Détails de la facture</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Article</th>
+                    <th>Quantité</th>
+                    <th>Prix unitaire</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Ajoutez des lignes ici pour chaque article de la facture -->
+                <tr>
+                    <td>Article 1</td>
+                    <td>2</td>
+                    <td>$10.00</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td>Article 2</td>
+                    <td>1</td>
+                    <td>$15.00</td>
+                    <td>$15.00</td>
+                </tr>
+                <!-- Ajoutez d'autres lignes au besoin -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>$35.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+</body>
+
+</html>
